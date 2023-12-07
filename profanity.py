@@ -19,7 +19,7 @@ pf = ProfanityFilter()
 # print(pf.is_profane(input_text))
 
 
-headers = {"Authorization": "Bearer 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"}
+headers = {"Authorization": "Bearer API_TOKEN"}
 response = requests.post(endpoint, json=payload, headers=headers)
 if response.status_code == 200:
     result = json.loads(response.text)
